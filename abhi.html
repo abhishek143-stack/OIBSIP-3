@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="abhi.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Salevemula Abhishek</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hello, I'm <span>Salevemula Abhishek</span></h1>
+    <p>Aspiring Web Developer</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm [S Abhishek], a passionate and dedicated web developer/designer (or student, software engineer, etc.) with a strong interest in building beautiful and functional digital experiences. I specialize in front-end development and enjoy turning ideas into real-world applications using HTML, CSS, JavaScript, and modern frameworks.
+
+.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React (Optional)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Project Title</h3>
+      <p>Description of your project.</p>
+      <a href="#">View Project</a>
+    </div>
+    <!-- Duplicate for more projects -->
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <a class="btn" href="your_resume.pdf" target="_blank">Download Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Salevemula Abhishek. All Rights Reserved.</p>
+  </footer>
+
+  <script src="codealpha.js">
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+  </script>
+</body>
+</html>
